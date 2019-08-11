@@ -11,7 +11,7 @@ def cmdline(command):
     return process.communicate()[0]
 
 for i in range(3):
-    cmdline("adb connect 192.168.1.2:5555")
+    cmdline("adb devices")
 
 cmdline('adb push -p "'+os.getcwd()+'\Copied" /sdcard/')
 print('adb push -p "'+os.getcwd()+'\Copied" /sdcard/')
